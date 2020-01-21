@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.leagueoflegends.LeagueofLegendsActivity2"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/glLol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            app:layout_constraintGuide_percent="0.5"/>
+        <View
+            android:background="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolWinRate1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/ivLolProfile1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/ivLolTier1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15sp"
+            android:src="@drawable/t3958"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/tvLolName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUGKlNG"
+            android:textSize="23sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolLevel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level: 165"
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolName1"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20sp" />
+        <ImageView
+            android:id="@+id/ivLolTier1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintTop_toBottomOf="@+id/ivLolProfile1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15sp"/>
+        <TextView
+            android:id="@+id/tvLolRankTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tier"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/ivLolTier1"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolTier1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolRank1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Challenger 1"
+            android:textSize="22sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolRankTitle1"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolTier1"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolPoint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1201 LP"
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolRank1"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile2"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolWinLose1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="350 Wins / 250 Losses"
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolPoint1"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolTier1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolWinRate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="58%"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolWinLose1"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolTier1"
+            android:layout_marginStart="20sp" />
+
+        <ImageView
+            android:id="@+id/ivLolProfile2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/t3865"
+            app:layout_constraintTop_toBottomOf="@+id/glLol"
+            app:layout_constraintRight_toRightOf="@+id/ivLolTier2"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15sp"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/tvLolName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="maengsdog"
+            android:textSize="23sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/glLol"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolLevel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level: 111"
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolName2"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20sp" />
+        <ImageView
+            android:id="@+id/ivLolTier2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintTop_toBottomOf="@+id/ivLolProfile2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15sp"/>
+        <TextView
+            android:id="@+id/tvLolRankTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tier"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@+id/ivLolTier2"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolTier2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolRank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRANDMASTER I"
+            android:textSize="22sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolRankTitle2"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile2"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolPoint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="241 LP"
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolRank2"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile2"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolWinLose2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="351 Wins / 355 Losses"
+            android:textSize="19sp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolPoint2"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolProfile2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20sp" />
+        <TextView
+            android:id="@+id/tvLolWinRate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="49%"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tvLolWinLose2"
+            app:layout_constraintLeft_toRightOf="@+id/ivLolTier2"
+            android:layout_marginStart="20sp" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

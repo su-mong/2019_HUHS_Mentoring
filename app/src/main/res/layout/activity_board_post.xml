@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.board.BoardPostActivity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPureWhite">
+
+        <TextView
+            android:id="@+id/tvPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="야 진짜 좋은 아이디어가 생각났다 함 봐봐라"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/tvPostUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="네메시스"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPostTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/tvPostContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가나다라마가나다라마가나다라마가나다라마가나다"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPostUsername"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

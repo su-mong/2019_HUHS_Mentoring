@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/llChatReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPureWhite"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameChattingRaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="우수몽"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/tvChatChattingRaw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chattingother3"
+                android:text="안녕하세요, 대표님! 개발자 우수몽입니다. 문의주신 사항 중에서 물어볼 사항이 있어 연락드렸습니다. 통화 가능하실까요?"
+                android:textColor="@color/colorBlack"
+                android:padding="6dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChatMine"
+        android:visibility="gone"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPureWhite"
+        android:gravity="right"
+        android:paddingLeft="30dp"
+        android:paddingStart="60dp"
+        android:paddingRight="60dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent">
+        <TextView
+            android:id="@+id/tvChatChatMineRaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chattingme3"
+            android:text="반갑습니다"
+            android:textColor="@color/colorPureWhite"
+            android:padding="6dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

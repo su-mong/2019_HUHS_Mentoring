@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.candykick.huhs2ndmentoring">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@drawable/huhslogoblue"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/huhslogoblue"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="8b27ed5b92349aa05dffce8c281ef850" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rockpaperscissors.RockPaperScissorsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity android:name=".calculator.CalculatorActivity" />
+        <activity android:name=".drawing.DrawingActivity" />
+        <activity android:name=".drawing.DrawingDialogActivity" />
+        <activity
+            android:name=".voice.VoiceActivity"
+            android:theme="@style/AppThemeBlackAccent" />
+        <activity android:name=".voice.VoiceSearchActivity" />
+        <activity android:name=".voice.VoiceRecoActivity" />
+        <activity android:name=".voice.VoiceMainActivity" />
+        <activity android:name=".map.MapActivity" />
+        <activity android:name=".leagueoflegends.LeagueofLegendsActivity" />
+        <activity android:name=".leagueoflegends.LeagueofLegendsActivity2" />
+        <activity android:name=".MineSearchActivity" />
+        <activity android:name=".chat.ChatLoginActivity" />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".board.BoardListActivity" />
+        <activity android:name=".board.BoardPostActivity" />
+        <activity android:name=".board.BoardUploadActivity" />
+        <activity android:name=".voice.VoiceReActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.voice.VoiceSearchActivity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnVoice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음성으로 네이버 검색하기"
+            android:background="@drawable/button_blackline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="@{()->activity.bntVoiceSearch()}" />
+
+        <ImageView
+            android:id="@+id/ivVoice2"
+            android:layout_width="136dp"
+            android:layout_height="20dp"
+            android:src="@drawable/poweredbykakao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <ListView
+            android:id="@+id/lvVoice1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnVoice2"
+            app:layout_constraintBottom_toTopOf="@+id/ivVoice2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="15dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

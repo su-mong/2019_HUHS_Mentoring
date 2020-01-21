@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.voice.VoiceMainActivity"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/glVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/glVoice"
+            android:layout_margin="15dp"
+            android:text="음성인식"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="@{()->activity.btnGotoVoiceSearch()}"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/glVoice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="15dp"
+            android:text="음성합성"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:onClick="@{()->activity.btnGotoMakingVoice()}"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

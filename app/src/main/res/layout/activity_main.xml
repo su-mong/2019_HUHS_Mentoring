@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.MainActivity"/>
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnMain1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title1"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain1()}"/>
+            <Button
+                android:id="@+id/btnMain2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title13"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toBottomOf="@+id/btnMain1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain2()}"/>
+            <Button
+                android:id="@+id/btnMain3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title14"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toBottomOf="@+id/btnMain2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain3()}"/>
+            <Button
+                android:id="@+id/btnMain4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title7"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toBottomOf="@+id/btnMain3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain4()}"/>
+            <Button
+                android:id="@+id/btnMain5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title11"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toBottomOf="@+id/btnMain4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain5()}"/>
+            <Button
+                android:id="@+id/btnMain6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title12"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toBottomOf="@+id/btnMain5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain6()}"/>
+            <Button
+                android:id="@+id/btnMain7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/title15"
+                app:layout_constraintDimensionRatio="h,216:115"
+                app:layout_constraintTop_toBottomOf="@+id/btnMain6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="10dp"
+                android:onClick="@{()->activity.btnMain7()}"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</layout>

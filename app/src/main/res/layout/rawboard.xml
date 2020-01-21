@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvBoardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가나다라마가나다라마가나다라마가나"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvBoardContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가나다라마가나다라마가나다라마가나다라마가나다"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"/>
+
+</LinearLayout>

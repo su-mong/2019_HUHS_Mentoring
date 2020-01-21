@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "848524592331",
+    "firebase_url": "https://huhs-cc2fb.firebaseio.com",
+    "project_id": "huhs-cc2fb",
+    "storage_bucket": "huhs-cc2fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848524592331:android:8e7b448831dd7d6a",
+        "android_client_info": {
+          "package_name": "com.candykick.huhs2ndmentoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848524592331-9qpca6pt3s7dl9h2h1h7e5g1ioga73ia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.candykick.huhs2ndmentoring",
+            "certificate_hash": "527ff6794793f6d0174681f0cca9fe62c1f56367"
+          }
+        },
+        {
+          "client_id": "848524592331-7jpkjm6jcm2lquef0qp3fv1nef561l5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqGO6rslA584jjleawz8XrpydAN5C7tjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848524592331-7jpkjm6jcm2lquef0qp3fv1nef561l5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

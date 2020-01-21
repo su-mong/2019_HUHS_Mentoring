@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.voice.VoiceActivity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="20dp"
+            android:src="@drawable/poweredbykakao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/tvVoice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음성 합성"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/tvVoice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트를 음성으로 변환합니다."
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoice1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"/>
+        <EditText
+            android:id="@+id/etVoice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아무거나 입력!!"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoice2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/tvVoice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음성합성방식"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/etVoice1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"/>
+        <RadioGroup
+            android:id="@+id/rgVoice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoice3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15dp">
+            <RadioButton
+                android:id="@+id/rbVoice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="통계적 합성 방식(기존)"
+                android:checked="true"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="음성의 통계적 특성을 분석하여 모델을 만들고 이를 이용하여 합성하는 방식으로, 잘 쓰이지 않는 말이라도 안정적으로 합성 가능하며, 일관된 품질의 합성음을 생성해 낼 수 있는 방식이다. 단 편집 합성 방식에 비해 음질이 떨어진다."
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+            <RadioButton
+                android:id="@+id/rbVoice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="편집 합성 방식" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="녹음된 음성 데이터 자체를 이용하여 필요한 음소들을 발췌 후 합성하는 방식으로, 녹음에 사용된 문장과 동일한 영역의 문장들에 대해서는 기존 방식보다 자연스러운 음성을 만들어 낼 수 있다. 단 녹음 데이터에 없는 영역의 문장에서는 음질이 저하될 수 있다. 편집 합성 방식의 경우 합성 속도 변경 기능은 제공되지 않는다."
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvVoice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="발음 속도: 1.0 (0.5 ~ 4.0)"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/rgVoice1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"/>
+        <SeekBar
+            android:id="@+id/sbVoice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="15"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoice4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/tvVoice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목소리"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/sbVoice1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"/>
+        <LinearLayout
+            android:id="@+id/llVoice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            app:layout_constraintTop_toBottomOf="@+id/tvVoice5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+            <Button
+                android:id="@+id/btnVoiceType1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blacklineselected"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="@string/voiceType1"
+                android:onClick="@{()->activity.btnWomanVoice1()}"/>
+            <Button
+                android:id="@+id/btnVoiceType2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blackline"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="@string/voiceType2"
+                android:onClick="@{()->activity.btnWomanVoice2()}"/>
+            <Button
+                android:id="@+id/btnVoiceType3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blackline"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="@string/voiceType3"
+                android:onClick="@{()->activity.btnManVoice1()}"/>
+            <Button
+                android:id="@+id/btnVoiceType4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blackline"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:text="@string/voiceType4"
+                android:onClick="@{()->activity.btnManVoice2()}"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVoice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="텍스트 -> 음성"
+            android:background="@drawable/button_blackline"
+            app:layout_constraintTop_toBottomOf="@+id/llVoice1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="@{()->activity.btnVoice1()}"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_info_white_24dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="@{()->activity.btnVoiceQuestion()}"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

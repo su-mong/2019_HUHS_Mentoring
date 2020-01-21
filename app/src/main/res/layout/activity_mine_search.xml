@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.MineSearchActivity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:id="@+id/glMine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llGameover"
+            android:background="#88cccccc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <TextView
+                android:id="@+id/tvGameover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="땡! 틀렸습니다!"
+                android:textColor="#000000"
+                android:textSize="32sp"/>
+            <Button
+                android:id="@+id/btnMineStart"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="다시하기"
+                android:textSize="23sp"
+                android:onClick="@{()->activity.setNewGame()}"
+                android:layout_marginTop="30dp"/>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

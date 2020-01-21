@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.candykick.huhs2ndmentoring.chat.ChatLoginActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <EditText
+            android:id="@+id/etChatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="닉네임을 입력해주세요."
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp" />
+        
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="입장하기"
+            android:onClick="@{()->activity.entertoChat()}"
+            android:layout_marginTop="30dp"/>
+        
+    </LinearLayout>
+</layout>
